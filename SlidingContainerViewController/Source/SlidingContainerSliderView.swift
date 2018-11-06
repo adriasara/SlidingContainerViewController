@@ -149,7 +149,7 @@ public class SlidingContainerSliderView: UIScrollView, UIScrollViewDelegate {
   }
 
   // MARK: Actions
-
+  @objc
   public func didTap(_ tap: UITapGestureRecognizer) {
     self.sliderDelegate?.slidingContainerSliderViewDidPressed(self, atIndex: tap.view!.tag - 1)
   }
